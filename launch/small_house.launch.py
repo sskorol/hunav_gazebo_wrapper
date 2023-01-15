@@ -144,9 +144,8 @@ def generate_launch_description():
     ])
 
     gzserver_cmd = [
-        use_nvidia_gpu,
+        # use_nvidia_gpu,
         'gzserver ',
-        '--pause ',
         # Pass through arguments to gzserver
          world_path, 
         _boolean_command('verbose'), '',
@@ -158,7 +157,7 @@ def generate_launch_description():
     ]
 
     gzclient_cmd = [
-        use_nvidia_gpu,
+        # use_nvidia_gpu,
         'gzclient',
         _boolean_command('verbose'), ' ',
     ]
